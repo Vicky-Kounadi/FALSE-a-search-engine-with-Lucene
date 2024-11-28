@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="parent" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" spacing="20.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ControllerFalse_4">
+   <children>
+      <VBox alignment="TOP_CENTER" fillWidth="false" prefHeight="700.0" prefWidth="201.0" spacing="5.0" styleClass="background" stylesheets="@../css/mainmenu.css">
+         <children>
+            <AnchorPane prefHeight="319.0" prefWidth="170.0">
+               <children>
+                  <ImageView fitHeight="129.0" fitWidth="130.0" layoutX="21.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/lyrics.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="38.0" layoutY="193.0" text="Welcome to" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="44.0" layoutY="215.0" text="F.A.L.S.E." textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Line endX="100.0" layoutX="64.0" layoutY="284.0" startX="-57.600006103515625" stroke="WHITE" strokeWidth="2.0" />
+                  <Button id="modebutton" fx:id="modebutton" layoutX="-6.0" mnemonicParsing="false" onAction="#modeChange" prefHeight="18.0" prefWidth="18.0">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/darkmode.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <Button id="mainPage" fx:id="mainPage" alignment="BASELINE_LEFT" minWidth="-Infinity" mnemonicParsing="false" onAction="#goToMainPage" prefHeight="45.0" prefWidth="170.0" text="Search" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/search.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button id="import" fx:id="importPage" alignment="BASELINE_LEFT" minWidth="-Infinity" mnemonicParsing="false" onAction="#goToImportPage" prefHeight="45.0" prefWidth="170.0" text="Import" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="38.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/import.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button id="queryinfo" fx:id="queryInfo" alignment="BASELINE_LEFT" minWidth="-Infinity" mnemonicParsing="false" prefHeight="45.0" prefWidth="170.0" text="Help" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/help.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button id="exit" fx:id="exit" alignment="BASELINE_LEFT" minWidth="-Infinity" mnemonicParsing="false" onAction="#exitApp" prefHeight="45.0" prefWidth="170.0" text="Exit" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/exit.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+         </children>
+         <padding>
+            <Insets left="5.0" right="5.0" />
+         </padding>
+         <effect>
+            <DropShadow height="239.21" radius="65.7225" spread="0.03" width="25.68" />
+         </effect>
+      </VBox>
+      <VBox prefHeight="700.0" prefWidth="900.0" HBox.hgrow="ALWAYS">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0" VBox.vgrow="ALWAYS">
+               <padding>
+                  <Insets bottom="10.0" right="10.0" />
+               </padding>
+               <children>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0" stylesheets="@../css/mainpage.css" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label text="Example Queries">
+                           <font>
+                              <Font name="Arial" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextArea editable="false" layoutX="10.0" layoutY="20.0" prefHeight="200.0" prefWidth="200.0" text="Song Title: Foolish&#10;Artist: Sinatra&#10;Lyrics: cigarette&#10;&#10;Song Title: &quot;Love&quot;&#10;Artist: Adele OR Ed Sheeran&#10;Lyrics: heart AND soul&#10;&#10;Song Title: (Happy OR Joy) AND NOT Sad&#10;Artist: Coldplay&#10;Lyrics: &quot;sky full of stars&quot;&#10;" wrapText="true" VBox.vgrow="ALWAYS">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextArea>
+                        <Label text="My Queries">
+                           <font>
+                              <Font name="Arial" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextArea fx:id="queries" onKeyTyped="#fieldCheck" prefHeight="200.0" prefWidth="200.0" promptText="Type here...." wrapText="true" VBox.vgrow="ALWAYS">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextArea>
+                        <HBox alignment="CENTER" prefHeight="38.0" prefWidth="731.0" spacing="20.0">
+                           <children>
+                              <Button fx:id="change" mnemonicParsing="false" onAction="#saveChanges" prefHeight="30.0" prefWidth="150.0" styleClass="button-search" text="Save" HBox.hgrow="ALWAYS">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="17.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icons/save.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets right="10.0" top="10.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</HBox>

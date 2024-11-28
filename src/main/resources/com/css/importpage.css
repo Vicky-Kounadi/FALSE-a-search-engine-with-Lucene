@@ -1,0 +1,64 @@
+.button{
+    -fx-background-color: #2b3ecf;
+    -fx-cursor:hand;
+    -fx-text-fill:#fff;
+    -fx-background-radius: 10;
+    -fx-font-size:14px;
+    -fx-font-family:"Arial";
+}
+
+.button-import{
+    -fx-background-color:  #881fae;
+    -fx-cursor:hand;
+    -fx-text-fill:#fff;
+    -fx-background-radius: 10;
+    -fx-font-size:14px;
+    -fx-font-family:"Arial";
+}
+
+
+/*RADIO*/
+.radio-button .radio,
+.radio-button .text {
+    -fx-shape: null;
+    -fx-padding: 0.0em 0.2em 0.0em 0.2em;
+}
+
+.radio-button .radio {
+    -fx-background-color: transparent;
+}
+
+.radio-button .radio > .dot {
+    -fx-background-radius: 0;
+    -fx-background-color: transparent;
+}
+
+.radio-button .radio:selected > .dot {
+    -fx-background-color: transparent;
+}
+
+.radio-button .radio:selected > .mark {
+    -fx-background-color: transparent;
+}
+
+
+.radio-button:selected {
+    -fx-graphic: null;
+    -fx-border-width: 0 0 2px 0; 
+    -fx-border-color: linear-gradient(to right,  #1f2fac, #881fae); 
+}
+
+/* SCROLL BAR*/
+.text-area .scroll-bar {
+    -fx-background-color: transparent; 
+}
+
+.text-area .scroll-bar .thumb {
+    -fx-background-color: #cccccc; 
+}
+
+.text-area .scroll-bar .track,
+.text-area .scroll-bar .increment-button,
+.text-area .scroll-bar .decrement-button {
+    -fx-background-color: transparent;
+}

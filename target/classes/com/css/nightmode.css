@@ -1,0 +1,54 @@
+.root{
+    -fx-background-color: #2d2d30;
+}
+
+.button{
+    -fx-background-color: #2b3ecf;
+    -fx-cursor:hand;
+    -fx-text-fill:#fff;
+    -fx-background-radius: 10;
+    -fx-font-size:14px;
+    -fx-font-family:"Arial";
+}
+
+.button-search{
+    -fx-background-color:  #881fae;
+    -fx-cursor:hand;
+    -fx-text-fill:#fff;
+    -fx-background-radius: 10;
+    -fx-font-size:14px;
+    -fx-font-family:"Arial";
+}
+
+.label{
+    -fx-text-fill: white;
+}
+
+.radio-button{
+    -fx-text-fill: white; 
+}
+
+.text-field {
+    -fx-control-inner-background: #3e3e42;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: rgba(255, 255, 255, 0.393);
+    -fx-cursor: default;
+}
+
+.text-area {
+    -fx-control-inner-background: #3e3e42;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: rgba(255, 255, 255, 0.393);
+    -fx-cursor: default;
+}
+
+
+
+
+
+
+
+
+
+
+

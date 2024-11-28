@@ -1,0 +1,24 @@
+/*LISTVIEW*/
+.listview {
+    -fx-border-width: 2; 
+    -fx-background-radius: 10;
+    -fx-border-color: linear-gradient(to right,  #1f2fac, #881fae); 
+    -fx-border-radius: 10;
+    -fx-padding: 5;
+    -fx-control-inner-background: #3e3e42; 
+}
+
+.listview .list-cell {
+    -fx-background-color: #3e3e42; 
+    -fx-control-inner-background: #3e3e42; 
+    -fx-padding: 5 5 0 5; 
+    -fx-border-width: 0 0 1 0; 
+    -fx-border-color: black; 
+    -fx-background-radius: 0; 
+    -fx-text-fill: white;
+}
+
+.listview .list-cell:selected {
+    -fx-background-color: #7d89e3; 
+    -fx-background-radius: 5; 
+}

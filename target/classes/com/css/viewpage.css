@@ -1,0 +1,74 @@
+.button{
+    -fx-background-color: #2b3ecf;
+    -fx-cursor:hand;
+    -fx-text-fill:#fff;
+    -fx-background-radius: 10;
+    -fx-font-size:14px;
+    -fx-font-family:"Arial";
+}
+
+.button-search{
+    -fx-background-color:  #881fae;
+    -fx-cursor:hand;
+    -fx-text-fill:#fff;
+    -fx-background-radius: 10;
+    -fx-font-size:14px;
+    -fx-font-family:"Arial";
+}
+
+.button:disabled {
+    -fx-text-fill: #fff;
+    -fx-opacity: 1.0 ;
+    -fx-background-radius: 15;
+}
+
+/* SCROLL BAR*/
+.text-area .scroll-bar {
+    -fx-background-color: transparent; 
+}
+
+.text-area .scroll-bar .thumb {
+    -fx-background-color: #cccccc; 
+}
+
+.text-area .scroll-bar .track,
+.text-area .scroll-bar .increment-button,
+.text-area .scroll-bar .decrement-button {
+    -fx-background-color: transparent;
+}
+
+
+/*TEXTAREAS*/
+.text-area {
+    -fx-control-inner-background: transparent;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-text-fill: black;
+    -fx-font-size:14px;
+    -fx-font-family:"System"; 
+    -fx-cursor: default;
+    -fx-focus-color: transparent; 
+    -fx-faint-focus-color: transparent;
+    -fx-text-box-border: transparent;
+}
+
+.text-area *.text {
+    -fx-text-alignment: center;
+}
+
+
+/*TEXTFIELDS*/
+.text-field {
+    -fx-control-inner-background: transparent;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-text-fill: black;
+    -fx-cursor: default;
+    -fx-focus-color: transparent; 
+    -fx-faint-focus-color: transparent;
+    -fx-text-box-border: transparent;
+}
+
+
+
+

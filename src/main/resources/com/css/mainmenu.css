@@ -1,0 +1,20 @@
+.background{
+    -fx-background-color:linear-gradient(to bottom right, #1f2fac, #881fae);
+    
+}
+
+.button{
+    -fx-background-color:transparent;
+    -fx-cursor:hand;
+    -fx-text-fill:#fff;
+    -fx-background-radius: 5;
+    -fx-font-size:18px;
+    -fx-font-family:"Arial";
+}
+
+.button:disabled {
+    -fx-background-color: linear-gradient(to right,  #2b3ecf, #a939d2);
+    -fx-text-fill: #fff;
+    -fx-opacity: 1.0 ;
+    -fx-background-radius: 5;
+}
